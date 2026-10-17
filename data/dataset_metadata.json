@@ -1,0 +1,353 @@
+[
+  {
+    "title": "Diffusion MRI",
+    "authors": [
+      "Derek K. Jones"
+    ],
+    "year": 2010,
+    "doi": null
+  },
+  {
+    "title": "COMMIT: Convex Optimization Modeling for Micro-structure Informed Tractography",
+    "authors": [
+      "Alessandro Daducci",
+      "Alessandro Dal Palù",
+      "Alia Lemkaddem",
+      "Jean-Philippe Thiran"
+    ],
+    "year": 2015,
+    "doi": "10.1109/TMI.2014.2352414"
+  },
+  {
+    "title": "Tractostorm: The what, why, and how of tractography dissection reproducibility",
+    "authors": [
+      "François Rheault",
+      "Alessandro De Benedictis",
+      "Alessandro Daducci",
+      "Chiara Maffei",
+      "Chantal M. W. Tax",
+      "David Romascano",
+      "Eduardo Caverzasi",
+      "Felix C. Morency",
+      "Francesco Corrivetti",
+      "Franco Pestilli",
+      "Gabriel Girard",
+      "Guillaume Theaud",
+      "Ilyess Zemmoura",
+      "Janice Hau",
+      "Kelly Glavin",
+      "Kesshi M. Jordan",
+      "Kristofer Pomiecko",
+      "Maxime Chamberland",
+      "Muhamed Barakovic",
+      "Nil Goyette",
+      "Philippe Poulin",
+      "Quentin Chenot",
+      "Sandip S. Panesar",
+      "Silvio Sarubbo",
+      "Laurent Petit",
+      "Maxime Descoteaux"
+    ],
+    "year": 2020,
+    "doi": "10.1002/hbm.24917"
+  },
+  {
+    "title": "Diffusion-Simulated Connectivity Challenge: Structured description of the challenge design",
+    "authors": [],
+    "year": 2021,
+    "doi": null
+  },
+  {
+    "title": "Tractography passes the test: Results from the diffusion-simulated connectivity (DiSCo) challenge",
+    "authors": [
+      "Gabriel Girard",
+      "Jonathan Rafael-Patiño",
+      "Raphaël Truffet",
+      "Dogu Baran Aydogan",
+      "Nagesh Adluru",
+      "Veena A. Nair",
+      "Vivek Prabhakaran",
+      "Barbara B. Bendlin",
+      "Andrew L. Alexander",
+      "Sara Bosticardo",
+      "Ilaria Gabusi",
+      "Mario Ocampo-Pineda",
+      "Matteo Battocchio",
+      "Zuzana Piskorova",
+      "Pietro Bontempi",
+      "Simona Schiavi",
+      "Alessandro Daducci",
+      "Aleksandra Stafiej",
+      "Dominika Ciupek",
+      "Fabian Bogusz",
+      "Tomasz Pieciak",
+      "Matteo Frigo",
+      "Sara Sedlar",
+      "Samuel Deslauriers-Gauthier",
+      "Ivana Kojčić",
+      "Mauro Zucchelli",
+      "Hiba Laghrissi",
+      "Yang Ji",
+      "Rachid Deriche",
+      "Kurt G. Schilling",
+      "Bennett A. Landman",
+      "Alberto Cacciola",
+      "Gianpaolo Antonio Basile",
+      "Salvatore Bertino",
+      "Nancy Newlin",
+      "Praitayini Kanakaraj",
+      "François Rheault",
+      "Patryk Filipiak",
+      "Timothy M. Shepherd",
+      "Ying-Chia Lin",
+      "Dimitris G. Placantonakis",
+      "Fernando E. Boada",
+      "Steven H. Baete",
+      "Erick Hernández-Gutiérrez",
+      "Alonso Ramírez-Manzanares",
+      "Ricardo Coronado-Leija",
+      "Pablo Stack-Sánchez",
+      "Luis Concha",
+      "Maxime Descoteaux",
+      "Sina Mansour",
+      "Caio Seguin",
+      "Andrew Zalesky",
+      "Kenji Marshall",
+      "Erick J. Canales-Rodríguez",
+      "Ye Wu",
+      "Sahar Ahmad",
+      "Pew-Thian Yap",
+      "Antoine Théberge",
+      "Florence Gagnon",
+      "Frédéric Massi",
+      "Elda Fischi-Gomez",
+      "Rémy Gardier",
+      "Juan Luis Villarreal Haro",
+      "Marco Pizzolato",
+      "Emmanuel Caruyer",
+      "Jean-Philippe Thiran"
+    ],
+    "year": 2023,
+    "doi": "10.1016/j.neuroimage.2023.120231"
+  },
+  {
+    "title": "MRtrix: Diffusion tractography in crossing fiber regions",
+    "authors": [
+      "J.-Donald Tournier",
+      "Fernando Calamante",
+      "Alan Connelly"
+    ],
+    "year": 2012,
+    "doi": "10.1002/ima.22005"
+  },
+  {
+    "title": "Parallel Transport Tractography",
+    "authors": [
+      "Dogu Baran Aydogan",
+      "Yonggang Shi"
+    ],
+    "year": 2021,
+    "doi": "10.1109/TMI.2020.3034038"
+  },
+  {
+    "title": "Quaternion Frame Approach to Streamline Visualization",
+    "authors": [
+      "Andrew J. Hanson",
+      "Hui Ma"
+    ],
+    "year": 1995,
+    "doi": null
+  },
+  {
+    "title": "Partículas Masivas para Tractografía Cerebral usando Multi-Tensores de Difusión",
+    "authors": [
+      "Ramon Aranda"
+    ],
+    "year": null,
+    "doi": null
+  },
+  {
+    "title": "The challenge of mapping the human connectome based on diffusion tractography",
+    "authors": [
+      "Klaus H. Maier-Hein",
+      "Peter F. Neher",
+      "Jean-Christopher Houde",
+      "Klaus H. Maier-Hein",
+      "Maxime Descoteaux",
+      "Marco Amunts",
+      "et al."
+    ],
+    "year": 2017,
+    "doi": "10.1038/s41467-017-01285-x"
+  },
+  {
+    "title": "The challenge of mapping the human connectome based on diffusion tractography",
+    "authors": [
+      "Klaus H. Maier-Hein",
+      "Peter F. Neher",
+      "Jean-Christopher Houde",
+      "Klaus H. Maier-Hein",
+      "Maxime Descoteaux",
+      "Marco Amunts",
+      "et al."
+    ],
+    "year": 2017,
+    "doi": "10.1038/s41467-017-01285-x"
+  },
+  {
+    "title": "Towards quantitative connectivity analysis: reducing tractography biases",
+    "authors": [
+      "Gabriel Girard",
+      "Kevin Whittingstall",
+      "Rachid Deriche",
+      "Maxime Descoteaux"
+    ],
+    "year": 2014,
+    "doi": "10.1016/j.neuroimage.2014.04.074"
+  },
+  {
+    "title": "Tracking and validation techniques for topographically organized tractography",
+    "authors": [
+      "Dogu Baran Aydogan",
+      "Yonggang Shi"
+    ],
+    "year": 2018,
+    "doi": "10.1016/j.neuroimage.2018.06.071"
+  },
+  {
+    "title": "Tractography passes the test: results from the diffusion-simulated connectivity (DiSCo) challenge — Supplementary material",
+    "authors": [],
+    "year": 2023,
+    "doi": null
+  },
+  {
+    "title": "Tractography in Neurosurgery: A Systematic Review of Current Applications",
+    "authors": [
+      "Tim Wende",
+      "Karl-Titus Hoffmann",
+      "Jürgen Meixensberger"
+    ],
+    "year": 2020,
+    "doi": "10.1055/s-0039-1691823"
+  },
+  {
+    "title": "A flocking based method for brain tractography",
+    "authors": [
+      "Ramon Aranda",
+      "Mariano Rivera",
+      "Alonso Ramirez-Manzanares"
+    ],
+    "year": 2014,
+    "doi": "10.1016/j.media.2014.01.009"
+  },
+  {
+    "title": "Deep Image Prior",
+    "authors": [
+      "Dmitry Ulyanov",
+      "Andrea Vedaldi",
+      "Victor Lempitsky"
+    ],
+    "year": 2018,
+    "doi": null
+  },
+  {
+    "title": "MRtrix3: A fast, flexible and open software framework for medical image processing and visualisation",
+    "authors": [
+      "J.-Donald Tournier",
+      "Robert Smith",
+      "David Raffelt",
+      "Rami Tabbara",
+      "Thijs Dhollander",
+      "Maximilian Pietsch",
+      "Daan Christiaens",
+      "Ben Jeurissen",
+      "Chun-Hung Yeh",
+      "Alan Connelly"
+    ],
+    "year": 2019,
+    "doi": "10.1016/j.neuroimage.2019.116137"
+  },
+  {
+    "title": "A Framework for a Streamline-Based Probabilistic Index of Connectivity (PICo) Using a Structural Interpretation of MRI Diffusion Measurements",
+    "authors": [
+      "Geoffrey J. M. Parker",
+      "Hamied A. Haroon",
+      "Claudia A. M. Wheeler-Kingshott"
+    ],
+    "year": 2003,
+    "doi": "10.1002/jmri.10350"
+  },
+  {
+    "title": "The Connectome Mapper: An Open-Source Processing Pipeline to Map Connectomes with MRI",
+    "authors": [
+      "Alessandro Daducci",
+      "Stephan Gerhard",
+      "Alessandra Griffa",
+      "Alia Lemkaddem",
+      "Leila Cammoun",
+      "Xavier Gigandet",
+      "Reto Meuli",
+      "Patric Hagmann",
+      "Jean-Philippe Thiran"
+    ],
+    "year": 2012,
+    "doi": "10.1371/journal.pone.0048121"
+  },
+  {
+    "title": "Direct estimation of the fiber orientation density function from diffusion-weighted MRI data using spherical deconvolution",
+    "authors": [
+      "J.-Donald Tournier",
+      "Fernando Calamante",
+      "David G. Gadian",
+      "Alan Connelly"
+    ],
+    "year": 2004,
+    "doi": "10.1016/j.neuroimage.2004.07.037"
+  },
+  {
+    "title": "Robust determination of the fibre orientation distribution in diffusion MRI: Non-negativity constrained super-resolved spherical deconvolution",
+    "authors": [
+      "J.-Donald Tournier",
+      "Fernando Calamante",
+      "Alan Connelly"
+    ],
+    "year": 2007,
+    "doi": "10.1016/j.neuroimage.2007.02.016"
+  },
+  {
+    "title": "Dipy, a library for the analysis of diffusion MRI data",
+    "authors": [
+      "Eleftherios Garyfallidis",
+      "Matthew Brett",
+      "Bagrat Amirbekian",
+      "Ariel Rokem",
+      "Stefan van der Walt",
+      "Maxime Descoteaux",
+      "Ian Nimmo",
+      "Dipy Contributors"
+    ],
+    "year": 2014,
+    "doi": "10.3389/fninf.2014.00008"
+  },
+  {
+    "title": "NODDI: Practical in vivo neurite orientation dispersion and density imaging of the human brain",
+    "authors": [
+      "Hui Zhang",
+      "Torben Schneider",
+      "Claudia A. Wheeler-Kingshott",
+      "Daniel C. Alexander"
+    ],
+    "year": 2012,
+    "doi": "10.1016/j.neuroimage.2012.03.072"
+  },
+  {
+    "title": "Probabilistic fibre tracking: Differentiation of connections from chance events",
+    "authors": [
+      "David M. Morris",
+      "Karl V. Embleton",
+      "Geoff J. M. Parker"
+    ],
+    "year": 2008,
+    "doi": "10.1016/j.neuroimage.2008.06.012"
+  }
+]
