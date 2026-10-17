@@ -1,2 +1,3 @@
 data/*
 !data/dataset_metadata.json
+PLAN_RAG.md

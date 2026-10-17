@@ -1,1 +1,1 @@
-# Dependencies will be added as the project evolves.
+pypdf>=5.0
