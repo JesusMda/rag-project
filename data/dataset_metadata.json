@@ -181,20 +181,6 @@
     "doi": "10.1038/s41467-017-01285-x"
   },
   {
-    "title": "The challenge of mapping the human connectome based on diffusion tractography",
-    "authors": [
-      "Klaus H. Maier-Hein",
-      "Peter F. Neher",
-      "Jean-Christopher Houde",
-      "Klaus H. Maier-Hein",
-      "Maxime Descoteaux",
-      "Marco Amunts",
-      "et al."
-    ],
-    "year": 2017,
-    "doi": "10.1038/s41467-017-01285-x"
-  },
-  {
     "title": "Towards quantitative connectivity analysis: reducing tractography biases",
     "authors": [
       "Gabriel Girard",
@@ -278,22 +264,6 @@
     "doi": "10.1002/jmri.10350"
   },
   {
-    "title": "The Connectome Mapper: An Open-Source Processing Pipeline to Map Connectomes with MRI",
-    "authors": [
-      "Alessandro Daducci",
-      "Stephan Gerhard",
-      "Alessandra Griffa",
-      "Alia Lemkaddem",
-      "Leila Cammoun",
-      "Xavier Gigandet",
-      "Reto Meuli",
-      "Patric Hagmann",
-      "Jean-Philippe Thiran"
-    ],
-    "year": 2012,
-    "doi": "10.1371/journal.pone.0048121"
-  },
-  {
     "title": "Direct estimation of the fiber orientation density function from diffusion-weighted MRI data using spherical deconvolution",
     "authors": [
       "J.-Donald Tournier",
@@ -349,5 +319,32 @@
     ],
     "year": 2008,
     "doi": "10.1016/j.neuroimage.2008.06.012"
+  },
+  {
+    "title": "Anatomically informed multi-level fiber tractography for targeted virtual dissection",
+    "authors": [
+      "Andrey Zhylka",
+      "Alexander Leemans",
+      "Josien P. W. Pluim",
+      "Alberto De Luca"
+    ],
+    "year": 2022,
+    "doi": "10.1007/s10334-022-01033-3"
+  },
+  {
+    "title": "The Connectome Mapper: An Open-Source Processing Pipeline to Map Connectomes with MRI",
+    "authors": [
+      "Alessandro Daducci",
+      "Stephan Gerhard",
+      "Alessandra Griffa",
+      "Alia Lemkaddem",
+      "Leila Cammoun",
+      "Xavier Gigandet",
+      "Reto Meuli",
+      "Patric Hagmann",
+      "Jean-Philippe Thiran"
+    ],
+    "year": 2012,
+    "doi": "10.1371/journal.pone.0048121"
   }
 ]
