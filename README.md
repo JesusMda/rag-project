@@ -24,3 +24,14 @@ python src/retrieval/semantic.py hybrid "¿Qué mide NODDI?" --limit 5
 ```
 
 Los vectores y metadatos se guardan en `data/index/semantic.npz` y `data/index/semantic.json`, ambos locales e ignorados por Git. La combinación híbrida usa Reciprocal Rank Fusion ponderada (semántica 3:1 léxica por defecto) para combinar posiciones sin comparar directamente BM25 y similitud coseno. Los pesos se pueden ajustar con `--semantic-weight` y `--bm25-weight`.
+
+## Respuestas fundamentadas (Ollama local)
+
+La generación usa Ollama en `http://localhost:11434` para mantener local el procesamiento de los documentos. Instala/inicia Ollama y descarga un modelo compatible, por ejemplo `ollama pull llama3.1`. Después de construir los índices léxico y semántico, pregunta así:
+
+```bash
+python src/retrieval/answering.py "¿Qué mide NODDI y cómo se evalúa su precisión?"
+python src/retrieval/answering.py "¿Qué sesgos afectan a la tractografía?" --model llama3.1 --limit 8
+```
+
+El comando recupera fragmentos con búsqueda híbrida, envía al modelo solo esos fragmentos y solicita citas `[S1]`, `[S2]` enlazadas con título y página. `--max-context-chars` limita el tamaño de la evidencia enviada. Se puede seleccionar otra instancia compatible con la API de Ollama usando `--ollama-url`; esa instancia recibirá la pregunta y el texto recuperado, así que usa una instancia de confianza. La generación puede omitir o asignar mal citas; comprueba cada referencia contra el PDF original.
