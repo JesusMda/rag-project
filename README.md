@@ -34,7 +34,9 @@ python src/retrieval/answering.py "¿Qué mide NODDI y cómo se evalúa su preci
 python src/retrieval/answering.py "¿Qué sesgos afectan a la tractografía?" --model llama3.1 --limit 8
 ```
 
-El comando recupera fragmentos con búsqueda híbrida, envía al modelo solo esos fragmentos y solicita citas `[S1]`, `[S2]` enlazadas con título y página. `--max-context-chars` limita el tamaño de la evidencia enviada. Se puede seleccionar otra instancia compatible con la API de Ollama usando `--ollama-url`; esa instancia recibirá la pregunta y el texto recuperado, así que usa una instancia de confianza. La generación puede omitir o asignar mal citas; comprueba cada referencia contra el PDF original.
+La generación se limita por defecto a 256 tokens; ajusta ese límite con `--max-answer-tokens`.
+
+El comando recupera fragmentos con búsqueda híbrida, envía al modelo solo esos fragmentos y solicita citas `[S1]`, `[S2]` enlazadas con título y página. Si la respuesta no contiene citas o usa identificadores ajenos a las fuentes recuperadas, el CLI la reemplaza por un aviso de que no puede fundamentarla. `--max-context-chars` limita el tamaño de la evidencia enviada. Se puede seleccionar otra instancia compatible con la API de Ollama usando `--ollama-url`; esa instancia recibirá la pregunta y el texto recuperado, así que usa una instancia de confianza. Las citas válidas aún requieren comprobación contra el PDF original.
 
 Las páginas citadas son números de página del archivo PDF (comenzando en 1), no necesariamente la numeración impresa en el libro o artículo. Las páginas en blanco se conservan durante la extracción para no desplazar la correspondencia con el PDF, pero no producen fragmentos.
 

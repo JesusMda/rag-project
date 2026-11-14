@@ -42,3 +42,16 @@ Este archivo es la bitácora del proyecto. Añadiremos cada hallazgo con su efec
 - **Problema:** qué se observó y dónde.
 - **Solución:** cambio realizado o decisión tomada.
 - **Estado:** corregido, en revisión o pendiente.
+
+## 2026-11-14 — Respuesta de Ollama sin límite de longitud
+
+- **Problema:** al validar preguntas, Ollama tardaba y la solicitud agotaba el tiempo de espera. La API aceptaba consultas breves.
+- **Solución:** el comando de respuestas ahora envía `num_predict` y ofrece `--max-answer-tokens` (256 por defecto) para acotar la generación.
+- **Estado:** implementado. `llama3.1` terminó con error HTTP 500 (proceso del modelo terminado por el servidor); la validación usó `llama3.2:1b`.
+
+## 2026-11-14 — Respuestas sin citas o fuera de evidencia
+
+- **Problema:** `llama3.2:1b` omitió citas en las tres pruebas. En la pregunta sobre NODDI confundió cuatro *shells* con capas de tejido; en la pregunta ambigua sobre el “mejor método” afirmó que había uno universal; ante “¿Cuál es la capital de Francia?” contestó con conocimiento externo y fragmentos irrelevantes.
+- **Solución:** el CLI ahora reemplaza la respuesta por un aviso si no hay citas o si alguna cita no pertenece a las fuentes enviadas. El README explica esta protección.
+- **Estado:** protección implementada. Las pruebas revelan que este modelo no cumple el formato solicitado, así que la etapa de respuestas no se puede dar por validada. Incluso con identificadores válidos, hay que comprobar cada afirmación contra el PDF.
+- **Revisión de cita:** la fuente NODDI indicada en la prueba apuntaba al PDF, página 5, donde se describen experimentos sintéticos de precisión y comparación contra el *ground truth*. La respuesta del modelo añadió una afirmación errónea sobre “cuatro capas”.
