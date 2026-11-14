@@ -35,3 +35,9 @@ python src/retrieval/answering.py "¿Qué sesgos afectan a la tractografía?" --
 ```
 
 El comando recupera fragmentos con búsqueda híbrida, envía al modelo solo esos fragmentos y solicita citas `[S1]`, `[S2]` enlazadas con título y página. `--max-context-chars` limita el tamaño de la evidencia enviada. Se puede seleccionar otra instancia compatible con la API de Ollama usando `--ollama-url`; esa instancia recibirá la pregunta y el texto recuperado, así que usa una instancia de confianza. La generación puede omitir o asignar mal citas; comprueba cada referencia contra el PDF original.
+
+Las páginas citadas son números de página del archivo PDF (comenzando en 1), no necesariamente la numeración impresa en el libro o artículo. Las páginas en blanco se conservan durante la extracción para no desplazar la correspondencia con el PDF, pero no producen fragmentos.
+
+## Registro de problemas
+
+Las observaciones del corpus, sus soluciones y los pendientes se anotan en [`PROBLEMAS.md`](PROBLEMAS.md).

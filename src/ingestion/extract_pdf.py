@@ -11,6 +11,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+import unicodedata
 from typing import Any
 
 try:
@@ -44,7 +45,7 @@ def extract_pdf(
     pages = []
     for page_number in range(start_page, last_page + 1):
         page = reader.pages[page_number - 1]
-        text = (page.extract_text() or "").strip()
+        text = clean_extracted_text(page.extract_text() or "")
         pages.append({"page": page_number, "text": text})
 
     metadata = reader.metadata
@@ -58,6 +59,21 @@ def extract_pdf(
         },
         "pages": pages,
     }
+
+
+def clean_extracted_text(text: str) -> str:
+    """Remove control glyphs while keeping layout separators and readable spacing."""
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    cleaned = []
+    for char in text:
+        category = unicodedata.category(char)
+        if category == "Cc" and char not in "\n\t":
+            cleaned.append(" ")
+        elif category == "Cf" and char != "\u00ad":
+            continue
+        else:
+            cleaned.append(char)
+    return "".join(cleaned).strip()
 
 
 def main() -> int:
@@ -89,7 +105,7 @@ def main() -> int:
     if empty_pages:
         print(
             "Warning: no selectable text found on page(s) "
-            f"{', '.join(map(str, empty_pages))}. These may be scanned pages; OCR is not applied.",
+            f"{', '.join(map(str, empty_pages))}. They may be blank or scanned; OCR is not applied.",
             file=sys.stderr,
         )
 

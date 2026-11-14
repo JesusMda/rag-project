@@ -81,8 +81,13 @@ def repeated_edge_lines(pages: list[dict[str, Any]], title: str) -> set[str]:
 
 
 def clean_page(text: str, repeated_lines: set[str]) -> str:
-    text = text.replace("\x00", "").replace("\u00ad", "")
     text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = "".join(
+        " " if unicodedata.category(char) == "Cc" and char not in "\n\t"
+        else "" if unicodedata.category(char) == "Cf"
+        else char
+        for char in text
+    )
     # Join words split by a line-ending hyphen, while preserving normal hyphens.
     text = re.sub(r"(?<=[A-Za-zÀ-ÖØ-öø-ÿ])-\s*\n\s*(?=[a-zà-öø-ÿ])", "", text)
 
